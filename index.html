@@ -1,48 +1,136 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pesquisa Culturama</title>
-</head>
 <body>
     <header> 
         <h1>Pesquisa Online</h1>
     </header>
-  
+
+    </header>
+       
     <section>
         <form action="" method="get">
-            <fieldset>
+         <fieldset>
+            
                 <legend><h2>Dados Pessoais</h2></legend>
+                
                 <label for="userName">Nome:</label>
                 <input type="text" name="userName" required>
-
                 <br>
-        
-                <label for="userAge">Idade:</label>
-                <input type="number" name="userAge" required
-                min="12" max="100">
-
+                
+                <label for="userAge">idade:</label>
+                <input type="number" name:"userAge" required min="12" max="100">
                 <br>
 
-                <label for="userEmail">Email:</label>
-                <input type="email" name="userEmail" required>
-
+                <label for="userBirthDate">Data de Nscimento:</label>
+                <input type="date" name="userBirthDate">
                 <br>
 
-                <label for="userPhoneNumber">Tel.:</label>
-                <input type="tel" name="userPhoneNumber" pattern="[0-9]{11}">
-
-                <br>
                 <label for="userImage">Upload de Foto:</label>
                 <input type="file" accept="image/* name="userImage>
 
-                <br>
-            </fieldset>
+            </fieldset>    
+        
+           
+         <fieldset>
+            <legend>Perfil:</legend>
+            <p>Gênero</p>
 
-            <button type="summit">Enviar</button>
+                <input type="radio" name="userGender"
+                value="feminino">
+                <label for="userGender">Feminino</label>
+
+
+                <input type="radio" name="userGender"
+                value="masculino">
+                <label for="userGender">Masculino</label>
+
+                <input type="radio" name="userGender"
+                value="nao informado">
+                <label for="userGender">Prefiro não informar</label>
+                <br>
+                <label for="maritalStatus">Estado Civil</label>
+
+                <select name="maritalStatus">
+                    <option value="naoInformado">Selecione...</option>
+                    <option value="solteiro">Solteiro</option>
+                    <option value="casado">Casado</option>
+                    <option value="solteiro">Divorciado</option>
+                    <option value="solteiro">Viuvo</option>
+
+                </select>
+                <br>
+
+                <label for="userState">Estado:</label>
+                <select name="userState" required>
+                    <option value="naoInformado">Selecione...</option>
+                    <option value="acre">Acre</option>
+                    <option value="alagoas">Alagoas</option>
+                    <option value="amapa">Amapá</option>
+                    <option value="amazonas">Amazonas</option>
+                    <option value="bahia">Bahia</option>
+                    <option value="ceara">Ceará</option>
+                    <option value="distritoFederal">Distrito FederaL</option>
+                    <option value="Espirito Santo">Espirito Santo</option>
+                    <option value="goias">Goiás</option>
+                    <option value="maranhao">Maranhão</option>
+                    <option value="matoGrossodoSul">Mato Grosso do Sul</option>
+                    <option value="matoGrosso">Mato Grosso</option>
+                    <option value="minasGerais">Minas Gerais</option>
+                    <option value="para">Pará</option>
+                    <option value="paraiba">Paraíba</option>
+                    <option value="parana">Paraná</option>
+                    <option value="pernambuco">Pernambuco</option>
+                    <option value="piaui">Piauí</option>
+                    <option value="riodeJaneiro">Rio de Janeiro</option>
+                    <option value="rioGrandedoNorte">Rio Grande do Norte</option>
+                    <option value="rioGrandedoSul">Rio Grande do Sul</option>
+                    <option value="rondonia">Rondônia</option>
+                    <option value="roraima">Roraima</option>
+                    <option value="santaCatarina">Santa Catarina</option>
+                    <option value="saoPaulo">São Paulo</option>
+                    <option value="sergipe">Sergipe</option>
+                    <option value="tocantins">Tocantins</option>
+                </select>
+
+                <br>
+
+
+                <label for="userCity">Cidade:</label>
+                <input type="text" name="userCity">
+
+         </fieldset>
+         
+         <fieldset>
+            <legend>Habitos</legend>
+            <p>Redes Sociais</p>
+            <input id="facebook" type="checkbox" name="social" value="facebook">
+            <label for="facebook">Facebook</label> 
+
+            <br>
+
+            <input id="instagram" type="checkbox" name="social" value="instagram">
+            <label for="instagram">Instagram</label> 
+            
+            <br>
+
+            <input id="x" type="checkbox" name="social" value="x">
+            <label for="x">X</label> 
+
+            <br>
+
+            <input id="linkedin" type="checkbox" name="social" value="linkedin">
+            <label for="linkedin">Linkedin</label> 
+
+            <br>
+
+            <input id="reddit" type="checkbox" name="social" value="reddit">
+            <label for="reddit">Reddit</label> 
+
+            <br>
+
+
+         </fieldset>
+
+        <button type="submit">Enviar</button>
+
+        
     </form>
     </section>
-    
-</body>
-</html>
